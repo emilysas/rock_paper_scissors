@@ -4,5 +4,5 @@ Feature: Starting a Game
 	I want to start a game
 
 	Scenario: New Game
-		When I am on homepage
-		Then I will see "Please enter your name"
+		When I am on the homepage
+		Then I should see "Please enter your name"

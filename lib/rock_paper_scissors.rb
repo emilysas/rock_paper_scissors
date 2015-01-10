@@ -2,6 +2,11 @@ require 'sinatra/base'
 
 class Rock_Paper_Scissors < Sinatra::Base
 
+  set :static, true
+  set :root, File.dirname(__FILE__)
+  set :public_dir, Proc.new{File.join(root, '..', "public")}
+  set :public_folder, 'public'
+  
   before do
     Choices = {
       rock: "Rock", 

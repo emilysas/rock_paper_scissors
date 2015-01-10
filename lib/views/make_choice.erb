@@ -1,8 +1,8 @@
 "Hi <%=session[:name]%>, would you like to choose Rock, Paper or Scissors?"
 
-<form action='choose' method='post'>
+<form action='/result' method='post'>
   <ul class='unstyled'>
-    <% Choices.each do |symp, text| %>
+    <% Choices.each do |sym, text| %>
      	<li>
         <label class='radio'>
         <input type='radio' name='vote' value='<%= sym %>' id='vote_<%= sym %>' />

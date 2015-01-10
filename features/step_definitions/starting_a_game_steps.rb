@@ -13,3 +13,7 @@ end
 When(/^I press "(.*?)"$/) do |button|
   click_on(button)
 end
+
+When(/^I choose "(.*?)"$/) do |option|
+  choose(option)
+end

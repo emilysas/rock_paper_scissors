@@ -15,6 +15,6 @@ Feature: Starting a Game
 
 	Scenario: Making a Choice
 		Given I am on new_game
-		When I check "Rock"
+		When I choose "Rock"
 		And I press "Play!"
 		Then I should see "Rock beats Paper, you win!"

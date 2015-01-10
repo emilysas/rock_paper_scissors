@@ -22,6 +22,10 @@ class Rock_Paper_Scissors < Sinatra::Base
     erb :make_choice
   end
 
+  post '/result' do
+    erb :result
+  end
+
   # start the server if ruby file executed directly
   run! if app_file == $0
 end

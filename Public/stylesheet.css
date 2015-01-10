@@ -21,6 +21,14 @@ p {
 	margin: 0 28.5%;
 }
 
+.result {
+	margin: 0 32.75%;
+}
+
+.loss {
+	margin-left: 34.75%;
+}
+
 ul {
 	margin: 7.5% 10% 5% 3.5%
 }
@@ -46,6 +54,7 @@ li {
 }*/
 .image_container {
 	margin: 50px 300px 150px 300px;
+	position: absolute;
 }
 
 .rock {

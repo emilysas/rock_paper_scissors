@@ -8,9 +8,12 @@ class Rock_Paper_Scissors < Sinatra::Base
       paper: "Paper",
       scissors: "Scissors"
     }
-
     @winner = {rock: :scissors, paper: :rock, scissors: :paper}
     @play = @winner.keys
+  end
+
+  def computer_choice
+    @computer_choice = Choices.keys.sample.to_s
   end
 
   get '/' do
@@ -23,15 +26,9 @@ class Rock_Paper_Scissors < Sinatra::Base
   end
 
   post '/result' do
-    choice = params[:choice]
-    computer_choice = Choices.keys.sample.to_s
-    if choice == computer_choice
-      "You tied with the computer. Try again!"
-    elsif computer_choice == @winner[choice.to_sym].to_s
-      "Wahoo! #{choice.capitalize} beats #{computer_choice.capitalize}, you win!"
-    else 
-      "Uh oh, #{computer_choice.capitalize} beats #{choice.capitalize}. Best out of 3?"
-     end 
+    @choice = params[:choice]
+    computer_choice
+    erb :result
   end
 
   # start the server if ruby file executed directly

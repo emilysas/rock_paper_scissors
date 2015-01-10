@@ -1,3 +1,9 @@
+require 'cucumber/rspec/doubles'
+
+# Before do
+#   allow(Rock_Paper_Scissors).to receive(:computer_choice){"Scissors"}
+# end
+
 Given /^(?:|I )am on (.+)$/ do |page_name|
   visit path_to(page_name)
 end
@@ -17,3 +23,5 @@ end
 When(/^I choose "(.*?)"$/) do |option|
   choose(option)
 end
+
+

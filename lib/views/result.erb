@@ -1,1 +1,11 @@
-Rock beats Paper, you win!
+
+<% if @choice == @computer_choice %>
+  You tied with the computer. Try again!
+<% elsif @computer_choice == @winner[@choice.to_sym].to_s %>
+  <%= "Wahay! #{@choice.capitalize} beats #{@computer_choice.capitalize}, you win!" %>
+<% else %>
+  <%= "Uh oh! Sorry, #{@computer_choice.capitalize} beats #{@choice.capitalize}." %>
+<% end %>
+
+<!-- <a href='/new_game'>Best of 3?</a> -->
+

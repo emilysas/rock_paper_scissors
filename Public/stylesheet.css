@@ -1,6 +1,5 @@
 body {
-	/*background-image: url('/Images/rps.png');*/
-/**/
+
 }
 
 h1 {
@@ -37,6 +36,7 @@ button, input {
 	font-family: 'Quicksand', sans-serif;
 	display: inline;
 	padding: 1%;
+
 }
 
 li {

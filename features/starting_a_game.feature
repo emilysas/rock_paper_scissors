@@ -7,8 +7,14 @@ Feature: Starting a Game
 		Given I am on the homepage
 		Then I should see "Please enter your name"
 
-	Scenario: Making a Choice
+	Scenario: Getting a Choice
 		Given I am on the homepage
 		When I fill in "name" with "Emily"
 		And I press "Submit"
 		Then I should see "Hi Emily, would you like to choose Rock, Paper or Scissors?"
+
+	Scenario: Making a Choice
+		Given I am on new_game
+		When I check "Rock"
+		And I press "Play!"
+		Then I should see "Rock beats Paper, you win!"

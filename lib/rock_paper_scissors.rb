@@ -3,7 +3,12 @@ require 'sinatra/base'
 class Rock_Paper_Scissors < Sinatra::Base
 
   before do
-    @choices = ["rock", "paper", "scissors"]
+    Choices = {
+      rock: "Rock", 
+      paper: "Paper",
+      scissors: "Scissors"
+    }
+
     @winner = {rock: :scissors, paper: :rock, scissors: :paper}
     @play = @winner.keys
   end

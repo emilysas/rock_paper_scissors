@@ -1,7 +1,75 @@
 body {
-	background-image: url(rps.png);
+	/*background-image: url('/Images/rps.png');*/
+/**/
 }
 
 h1 {
-	color: red;
+	margin: 5% 35%;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.yield {
+	margin: 5% 10%;
+}
+
+form {
+	margin: 0 28.5%;
+}
+
+p {
+	font-family: 'Quicksand', sans-serif;
+	margin: 0 28.5%;
+}
+
+ul {
+	margin: 7.5% 10% 5% 3.5%
+}
+
+button, input {
+	font-family: 'Quicksand', sans-serif;
+	display: inline;
+	padding: 1%;
+}
+
+li {
+	text-decoration: none;
+	display: inline;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+
+
+/*section .container {
+	size: 95%;
+	color: grey;
+}*/
+.image_container {
+	margin: 50px 300px 150px 300px;
+}
+
+.rock {
+	display: inline;
+}
+
+#rock {
+	width: 175px;
+}
+
+.paper {
+	display: inline;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+#paper {
+	width: 250px;
+}
+
+.scissors {
+	display: inline;
+}
+
+#scissors {
+	width: 275px;
 }

@@ -1,6 +1,6 @@
 
 <% if @choice == @computer_choice %>
-  You tied with the computer. Try again!
+  <p class="result">You tied with the computer. Try again!</p>
 <% elsif @computer_choice == @winner[@choice.to_sym].to_s %>
   <%= "Wahay! #{@choice.capitalize} beats #{@computer_choice.capitalize}, you win!" %>
 <% else %>

@@ -1,4 +1,4 @@
-Hi <%=session[:name]%>, would you like to choose Rock, Paper or Scissors?
+<p class = "choice">Hi <%=session[:name]%>, would you like to choose Rock, Paper or Scissors?</p>
 
 <form action='/result' method='post'>
   <ul class='unstyled'>
@@ -10,6 +10,7 @@ Hi <%=session[:name]%>, would you like to choose Rock, Paper or Scissors?
 	       </label>
       </li>
     <% end %>
+    <button type='submit' class='btn btn-primary'>Play!</button>
   </ul>
-  <button type='submit' class='btn btn-primary'>Play!</button>
+  
 </form>

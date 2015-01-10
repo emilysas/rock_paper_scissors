@@ -17,4 +17,4 @@ Feature: Starting a Game
 		Given I am on new_game
 		When I choose "Rock"
 		And I press "Play!"
-		Then I should see "Rock beats Paper, you win!"
+		Then I should see "Wahoo! Rock beats Scissors, you win!"

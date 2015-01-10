@@ -4,10 +4,10 @@
   <ul class='unstyled'>
     <% Choices.each do |sym, text| %>
      	<li>
-        <label class='radio'>
-        <input type='radio' name='vote' value='<%= sym %>' id='vote_<%= sym %>' />
-          <%= text %>
-          </label>
+     		<label class='radio'>
+	        <input type='radio' name='choice' value='<%= sym %>' />
+	          <%= text %>
+	       </label>
       </li>
     <% end %>
   </ul>

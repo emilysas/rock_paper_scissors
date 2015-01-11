@@ -17,4 +17,4 @@ Feature: Starting a Game
 		Given I am on new_game
 		When I choose "Rock"
 		And I press "Play!"
-		Then I should get message "Wahay! Rock beats Scissors, you win!"
+		Then I should get message "Wahay Emily! Rock beats Scissors, you win!"

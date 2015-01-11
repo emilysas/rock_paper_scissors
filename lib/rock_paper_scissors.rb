@@ -2,6 +2,7 @@ require 'sinatra/base'
 
 class Rock_Paper_Scissors < Sinatra::Base
 
+  enable :sessions
   set :static, true
   set :root, File.dirname(__FILE__)
   set :public_dir, Proc.new{File.join(root, '..', "public")}
@@ -34,6 +35,7 @@ class Rock_Paper_Scissors < Sinatra::Base
     @choice = params[:choice]
     computer_choice
     erb :result
+
   end
 
   # start the server if ruby file executed directly

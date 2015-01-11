@@ -20,7 +20,7 @@ p {
 	margin: 0 28.5%;
 }
 
-.result {
+.win, .draw {
 	margin: 0 32.75%;
 }
 
@@ -36,7 +36,6 @@ button, input {
 	font-family: 'Quicksand', sans-serif;
 	display: inline;
 	padding: 1%;
-
 }
 
 li {

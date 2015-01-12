@@ -1,10 +1,8 @@
-body {
-
-}
 
 h1 {
-	margin: 5% 35%;
+	margin: 5% auto;
 	font-family: 'Quicksand', sans-serif;
+	text-align: center
 }
 
 .yield {
@@ -12,24 +10,17 @@ h1 {
 }
 
 form {
-	margin: 0 28.5%;
+	text-align: center;
 }
 
 p {
 	font-family: 'Quicksand', sans-serif;
-	margin: 0 28.5%;
-}
-
-.win, .draw {
-	margin: 0 32.75%;
-}
-
-.loss {
-	margin-left: 34.75%;
+	margin: 0 auto;
+	text-align: center;
 }
 
 ul {
-	margin: 7.5% 10% 5% 3.5%
+	margin: 3% auto 5% auto;
 }
 
 button, input {
@@ -45,23 +36,19 @@ li {
 	margin-right: 2%;
 }
 
-
-
-/*section .container {
-	size: 95%;
-	color: grey;
-}*/
 .image_container {
-	margin: 50px 300px 150px 300px;
+	margin: 0 10% 20% 10%;
 	position: absolute;
+	width: 80%;
 }
 
 .rock {
 	display: inline;
+	margin: 5%;
 }
 
 #rock {
-	width: 175px;
+	width: 15%;
 }
 
 .paper {
@@ -71,7 +58,7 @@ li {
 }
 
 #paper {
-	width: 250px;
+	width: 25%;
 }
 
 .scissors {
@@ -79,5 +66,5 @@ li {
 }
 
 #scissors {
-	width: 275px;
+	width: 35%;
 }

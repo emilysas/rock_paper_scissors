@@ -34,6 +34,7 @@ class Rock_Paper_Scissors < Sinatra::Base
   post '/result' do
     @choice = params[:choice]
     computer_choice
+    @round_result = Game.player_choice params[:choice]
     erb :result
 
   end

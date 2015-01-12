@@ -14,8 +14,10 @@ describe Game do
     expect(player.choice).to eq(:rock)
   end
 
-  xit 'can ask the opponent to make a choice' do
-
+  it 'can ask the opponent to make a choice' do
+    game.player2_go
+    allow(opponent).to receive(:choose){:scissors}
+    expect(opponent.choice).to eq(:scissors)
   end
 
   xit 'can compare the choices' do

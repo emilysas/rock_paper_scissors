@@ -6,7 +6,8 @@ describe Opponent do
 
   it 'can make a random choice' do
     opponent.choose
-    expect(opponent.choice).to eq(:rock || :paper || :scissors)
+    allow(opponent).to receive(:choose){:rock}
+    expect(opponent.choice).to eq(:rock)
   end
   
 end

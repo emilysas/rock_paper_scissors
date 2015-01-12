@@ -20,8 +20,8 @@ describe Game do
     expect(opponent.choice).to eq(:scissors)
   end
 
-  xit 'can compare the choices' do
-
+  it 'can compare the choices' do
+    expect(game.compare(:rock, :scissors)).to eq(:win)
   end
 
   xit 'can declare a winner' do

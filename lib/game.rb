@@ -7,10 +7,13 @@ require_relative 'player'
 
 class Game
 
-  attr_accessor :player, :opponent
+  def initialize(player, opponent)
+    @player = player
+    @opponent = opponent
+  end
 
-  def player1(option)
-    player.choice(option)
+  def player1_go(option)
+    @player.choice = option 
   end
 
 end

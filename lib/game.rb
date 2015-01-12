@@ -1,9 +1,5 @@
 require_relative 'player'
-
-# Need 3 classes
-# Player - make a choice
-# Opponent - make a choice
-# Game - know if choice has been made, compare choices, declare win/draw/lose
+require_relative 'opponent'
 
 class Game
 

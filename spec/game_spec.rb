@@ -14,26 +14,22 @@ describe Game do
     expect(player.choice).to eq(:rock)
   end
 
-  it 'can ask the opponent to make a choice' do
+  xit 'can ask the opponent to make a choice' do
     game.player2_go
     allow(opponent).to receive(:choose){:scissors}
     expect(opponent.choice).to eq(:scissors)
   end
 
-  it 'can compare the choices' do
+  it 'can declare a win' do
     expect(game.compare(:rock, :scissors)).to eq(:win)
   end
 
-  xit 'can declare a winner' do
-
+  it 'can declare a draw' do
+    expect(game.compare(:rock, :rock)).to eq(:draw)
   end
 
-  xit 'can declare a draw' do
-
-  end
-
-  xit 'can declare a loser' do
-
+  it 'can declare a loss' do
+    expect(game.compare(:paper, :scissors)).to eq(:loss)
   end
 
 end

@@ -8,6 +8,7 @@ require_relative 'player'
 class Game
 
   attr_accessor :player, :opponent
+  attr_reader :result
 
   WINNER = {rock: :scissors, paper: :rock, scissors: :paper}
 

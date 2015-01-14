@@ -1,11 +1,11 @@
 
-<% if @choice == @computer_choice %>
+
   <p class="draw">You tied with the computer. Try again!</p>
-<% elsif @computer_choice == @winner[@choice.to_sym].to_s %>
+
   <p class="win"><%= "Wahay #{session[:name]}! #{@choice.capitalize} beats #{@computer_choice.capitalize}, you win!" %><p>
-<% else %>
+
   <p class="loss"><%= "Uh oh #{session[:name]}! Sorry, #{@computer_choice.capitalize} beats #{@choice.capitalize}." %><p>
-<% end %>
+
 
 <!-- <a href='/new_game'>Best of 3?</a> -->
 

@@ -3,8 +3,8 @@ require_relative 'opponent'
 
 class Game
 
-  attr_accessor :player, :opponent
-  attr_reader :result
+   
+  attr_reader :result, :player, :opponent
 
   WINNER = {rock: :scissors, paper: :rock, scissors: :paper}
 
@@ -14,17 +14,17 @@ class Game
   end
 
   def player1_go(option)
-    player.choice = option 
+    player.choice=(option) 
   end
 
   def player2_go
     opponent.choose
   end
 
-  def compare(player1_go, player2_go)
-    if player1_go == player2_go
+  def compare(player1_choice, player2_choice)
+    if player1_choice == player2_choice
       @result = :draw
-    elsif player1_go == WINNER[player2_go]
+    elsif player1_choice == WINNER[player2_choice]
       @result = :loss
     else
       @result = :win  

@@ -4,7 +4,7 @@ require 'opponent'
 
 describe Game do
 
-  let(:player){Player.new}
+  let(:player){Player.new("name")}
   let(:opponent){Opponent.new}
   let(:game){Game.new(player, opponent)}
 

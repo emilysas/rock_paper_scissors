@@ -2,7 +2,7 @@ require 'player'
 
 describe Player do
 
-  let(:player){Player.new}
+  let(:player){Player.new("name")}
 
   it 'can allows a player to choose rock, paper, or scissors' do
     player.choice = :rock

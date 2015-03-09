@@ -1,4 +1,4 @@
-##Rock, Paper, Scissors
+#Rock, Paper, Scissors
 _____________________
 
 This was my personal weekend challenge for Week 3 of Makers Academy. The task was to create a browser version of Rock, Paper, Scissors. A player would select from the options and this would be compared to a randomly generated option resulting in a win, loss or draw. My learning objectives were to consolidate my understanding of Sinatra, Cucumber, HTML and CSS.
@@ -47,5 +47,7 @@ I would like to create multiplayer functionality and a scoresheet.
 I need to address the CSS positioning issues.
 
 I would also like to animate the SVG images so that these are highlighted depending on the choice or perhaps the result. I am unclear how to do this, as I think it will require javascript and I do not yet know how to combine different paradigms. 
+
+Most importantly, I need to seperate the front end and back end and thin down my controller significantly.
 
 
